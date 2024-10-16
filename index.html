@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Jorge::Packaging </title>
+    <title>San Jorge::Packaging</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <!-- Incluye Swiper.js desde un CDN -->
+    <!-- Incluye Swiper.js desde un CDN -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- Incluye jsde desde un CDN -->
+    <!-- Incluye Font Awesome desde un CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
-        <!-- Incluye archivo estilos css-->
-    <link rel="stylesheet" href="style.css">
-
+ 
 </head>
 <body class="bg-gray-50 text-gray-800">
-
     <!-- Header y Nav -->
     <header class="bg-green-700 text-white sticky top-0 shadow-md z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-4 py-8 flex items-center justify-between">
             <!-- Logo con enlace a la página principal -->
-            <a href="index.html">
-                <img src="assets/san jorge pack.jpeg" alt="San Jorge Packaging Logo" class="w-32 h-auto animate__animated animate__fadeInDown">
+            <a href="/index.html">
+                <img src="/assets/san jorge pack.png" alt="San Jorge Packaging Logo" class="w-48 h-auto animate__animated animate__fadeInDown">
             </a>
             <nav class="animate__animated animate__fadeIn">
                 <ul class="flex space-x-8">
@@ -34,15 +31,12 @@
             </nav>
         </div>
     </header>
-
-
-    <!-- Hero Section -->
-    <section id="home" class="bg-green-100 min-h-screen flex items-center justify-center text-center p-8">
-        <div class="max-w-2xl animate__animated animate__zoomIn bg-white p-8 rounded-lg shadow-lg">
-            <h1 class="text-4xl font-bold text-green-700 mb-4">Bolsas Freshfresh para Llevar Alimentos</h1>
-            <p class="text-lg mb-6 text-gray-700">Soluciones sostenibles con tecnología de atmósfera modificada.</p>
-            <a href="#productos" class="bg-green-600 text-white py-2 px-6 rounded-full hover:bg-green-700 transition">Ver Productos</a>
-        </div>
+    <section id="home" class="relative bg-green-100 h-96 flex items-center justify-center text-center p-8 overflow-hidden">
+        <!-- Video Background -->
+        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover z-0 filter brightness-75 contrast-110">
+            <source src="video/videohome2.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
     </section>
 
     <!-- Productos Section -->
@@ -50,19 +44,19 @@
         <div class="max-w-7xl mx-auto text-center">
             <h2 class="text-3xl font-bold text-green-700 mb-12 animate__animated animate__fadeInUp">Nuestros Productos</h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="bg-white p-4 rounded-lg shadow-lg animate__animated animate__fadeInLeft transform hover:-translate-y-2 transition">
+                <div class="bg-white p-8         rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                     <img src="assets/FRESHFRESH-1-01.jpg" alt="Producto 1" class="w-full h-auto rounded-md mb-4">
                     <a href="pagina_producto1.html" class="mt-4 inline-block bg-transparent border-2 border-green-700 text-green-700 font-semibold py-2 px-4 rounded-full hover:bg-green-700 hover:text-white transition">Cotizar</a>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-lg animate__animated animate__fadeInUp transform hover:-translate-y-2 transition">
+                <div class="bg-white p-8 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                     <img src="assets/hdb.jpg" alt="Producto 2" class="w-full h-auto rounded-md mb-4">
                     <a href="pagina_producto2.html" class="mt-4 inline-block bg-transparent border-2 border-green-700 text-green-700 font-semibold py-2 px-4 rounded-full hover:bg-green-700 hover:text-white transition">Cotizar</a>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-lg animate__animated animate__fadeInRight transform hover:-translate-y-2 transition">
+                <div class="bg-white p-8 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                     <img src="assets/bag.jpg" alt="Producto 3" class="w-full h-auto rounded-md mb-4">
                     <a href="pagina_producto3.html" class="mt-4 inline-block bg-transparent border-2 border-green-700 text-green-700 font-semibold py-2 px-4 rounded-full hover:bg-green-700 hover:text-white transition">Cotizar</a>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-lg animate__animated animate__fadeInRight transform hover:-translate-y-2 transition">
+                <div class="bg-white p-8 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                     <img src="assets/natural.jpg" alt="Producto 4" class="w-full h-auto rounded-md mb-4">
                     <a href="pagina_producto4.html" class="mt-4 inline-block bg-transparent border-2 border-green-700 text-green-700 font-semibold py-2 px-4 rounded-full hover:bg-green-700 hover:text-white transition">Cotizar</a>
                 </div>
@@ -210,8 +204,8 @@
     </div>
 </footer>
 
-
     <script src="scripts.js"></script>
+
 
 </body>
 </html>
